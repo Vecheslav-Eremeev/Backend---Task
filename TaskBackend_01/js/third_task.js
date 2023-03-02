@@ -12,146 +12,82 @@ class Product {
 
 // Вернуть массив продуктов с названием содержащим подстроку
 function getProductNameContains(products, str) {
-    let res = [];
-    for (let i of products) {
-        if (i.name.includes(str)) res.push(i);
-    }
-    return res;
+    return products.filter(item => item.name.includes(str));
 }
 
 // Вернуть массив продуктов с названием начинающихся с подстроки
 function getProductNameStarts(products, str) {
-    let res = [];
-    for (let i of products) {
-        if (i.name.startsWith(str)) res.push(i);
-    }
-    return res;
+    return products.filter(item => item.name.startsWith(str));
 }
 
 // Вернуть массив продуктов с названием заканчиваюшимся на подстроку
 function getProductNameEnds(products, str) {
-    let res = [];
-    for (let i of products) {
-        if (i.name.endsWith(str)) res.push(i);
-    }
-    return res;
+    return products.filter(item => item.name.endsWith(str));
 }
 
 // Вернуть массив продуктов с описанием содержащим подстроку
 function getProductDescriptionContains(products, str) {
-    let res = [];
-    for (let i of products) {
-        if (i.description.includes(str)) res.push(i);
-    }
-    return res;
+    return products.filter(item => item.description.includes(str));
 }
 
 // Вернуть массив продуктов с описанием начинающихся с подстроки
 function getProductDescriptionStarts(products, str) {
-    let res = [];
-    for (let i of products) {
-        if (i.description.startsWith(str)) res.push(i);
-    }
-    return res;
+    return products.filter(item => item.description.startsWith(str));
 }
 
 // Вернуть массив продуктов с описаникм заканчиваюшимся на подстроку
 function getProductDescriptionEnds(products, str) {
-    let res = [];
-    for (let i of products) {
-        if (i.description.endsWith(str)) res.push(i);
-    }
-    return res;
+    return products.filter(item => item.description.endsWith(str));
 }
 
 // Вернуть массив продуктов с ценой больше чем значение
 function getPriceMoreThan(products, num) {
-    let res = [];
-    for (let i of products) {
-        if (i.price > num) res.push(i);
-    }
-    return res;
+    return products.filter(item => item.price > num);
 }
 
 // Вернуть массив продуктов с ценой больше чем или равной значению
 function getPriceMoreThanOrEquals(products, num) {
-    let res = [];
-    for (let i of products) {
-        if (i.price >= num) res.push(i);
-    }
-    return res;
+    return products.filter(item => item.price >= num);
 }
 
 // Вернуть массив продуктов с ценой меньше чем значение
 function getPriceLessThan(products, num) {
-    let res = [];
-    for (let i of products) {
-        if (i.price < num) res.push(i);
-    }
-    return res;
+    return products.filter(item => item.price < num);
 }
 
 // Вернуть массив продуктов с ценой меньше чем или равной значению
 function getPriceLessThanOrEquals(products, num) {
-    let res = [];
-    for (let i of products) {
-        if (i.price <= num) res.push(i);
-    }
-    return res;
+    return products.filter(item => item.price <= num);
 }
 
 // Вернуть массив продуктов с ценой равной значению 
 function getPriceEquals(products, num) {
-    let res = [];
-    for (let i of products) {
-        if (i.price == num) res.push(i);
-    }
-    return res;
+    return products.filter(item => item.price == num);
 }
 
 // Вернуть массив продуктов с количеством больше чем значение
 function getQuantityMoreThan(products, num) {
-    let res = [];
-    for (let i of products) {
-        if (i.quantity > num) res.push(i);
-    }
-    return res;
+    return products.filter(item => item.quantity > num);
 }
 
 // Вернуть массив продуктов с количеством больше чем или равной значению
 function getQuantityMoreThanOrEquals(products, num) {
-    let res = [];
-    for (let i of products) {
-        if (i.quantity >= num) res.push(i);
-    }
-    return res;
+    return products.filter(item => item.quantity >= num);
 }
 
 // Вернуть массив продуктов с количеством меньше чем значение
 function getQuantityLessThan(products, num) {
-    let res = [];
-    for (let i of products) {
-        if (i.quantity < num) res.push(i);
-    }
-    return res;
+    return products.filter(item => item.quantity < num);
 }
 
 // Вернуть массив продуктов с количеством меньше или равной значению
 function getQuantityLessThanOrEquals(products, num) {
-    let res = [];
-    for (let i of products) {
-        if (i.quantity <= num) res.push(i);
-    }
-    return res;
+    return products.filter(item => item.quantity <= num);
 }
 
 // Вернуть массив продуктов с количеством равном значению
 function getQuantityEquals(products, num) {
-    let res = [];
-    for (let i of products) {
-        if (i.quantity == num) res.push(i);
-    }
-    return res;
+    return products.filter(item => item.quantity == num);
 }
 
 // Вернуть массив продуктов только с подходящими объектами
